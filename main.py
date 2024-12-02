@@ -1,3 +1,4 @@
+#Arquivo e branch MAIN principal
 import tkinter as tk
 
 # Funções para operações matemáticas
