@@ -8,17 +8,11 @@ Desenvolver uma calculadora funcional utilizando a linguagem Python, capaz de re
 - Histórico de cálculos (opcional): Exibir os cálculos realizados durante a sessão.
 - Modularização do código: Dividir o programa em funções para facilitar a manutenção e expansão.
 ## Cronograma de Desenvolvimento
-- Planejamento e Ideação	Definir funcionalidades e estrutura do programa.	25/11/2024 - 26/11/2024
-- Implementação da Base do Código	Criar o esqueleto do programa e configurar o ambiente.	27/11/2024 - 28/11/2024
-- Desenvolvimento das Operações Básicas	Implementar soma, subtração, multiplicação e divisão.	28/11/2024 - 29/11/2024
-- Validação de Entradas e Melhorias	Adicionar verificações e implementar melhorias opcionais.	29/11/2024 - 30/11/2024
-- Testes e Finalização	Realizar testes, ajustes finais e documentação.	30/11/2024 - 01/12/2024
-## Cronograma de Desenvolvimento
 
 | **Etapa**                    | **Descrição**                                              | **Prazo Previsto**     |
 |------------------------------|----------------------------------------------------------|-----------------------|
-| Planejamento e Ideação       | Definir funcionalidades e estrutura do programa.           | 01/12/2024 - 02/12/2024 |
-| Implementação da Base do Código | Criar o esqueleto do programa e configurar o ambiente.      | 03/12/2024 - 05/12/2024 |
-| Desenvolvimento das Operações Básicas | Implementar soma, subtração, multiplicação e divisão.       | 06/12/2024 - 08/12/2024 |
-| Validação de Entradas e Melhorias | Adicionar verificações e implementar melhorias opcionais.   | 09/12/2024 - 11/12/2024 |
-| Testes e Finalização          | Realizar testes, ajustes finais e documentação.            | 12/12/2024 - 13/12/2024 |
+| Planejamento e Ideação       | Definir funcionalidades e estrutura do programa.           | 25/11/2024 - 26/11/2024 |
+| Implementação da Base do Código | Criar o esqueleto do programa e configurar o ambiente.      | 26/11/2024 - 27/11/2024 |
+| Desenvolvimento das Operações Básicas | Implementar soma, subtração, multiplicação e divisão.       | 27/11/2024 - 28/11/2024 |
+| Validação de Entradas e Melhorias | Adicionar verificações e implementar melhorias opcionais.   | 28/11/2024 - 29/11/2024 |
+| Testes e Finalização          | Realizar testes, ajustes finais e documentação.            | 30/11/2024 - 01/12/2024 |
