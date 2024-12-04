@@ -1,51 +1,53 @@
 import tkinter as tk
 
-# Funções para operações matemáticas
-def add():
-    result.set(float(entry_num1.get()) + float(entry_num2.get()))
-
-def subtract():
-    result.set(float(entry_num1.get()) - float(entry_num2.get()))
-
-def multiply():
-    result.set(float(entry_num1.get()) * float(entry_num2.get()))
-
-def divide():
+# Funções
+def calculate(operation):
     try:
-        result.set(float(entry_num1.get()) / float(entry_num2.get()))
-    except ZeroDivisionError:
-        result.set("Erro! Divisão por zero.")
+        num1 = float(entry_num1.get())
+        num2 = float(entry_num2.get())
+        if operation == "+":
+            result.set(num1 + num2)
+        elif operation == "-":
+            result.set(num1 - num2)
+        elif operation == "*":
+            result.set(num1 * num2)
+        elif operation == "/":
+            result.set(num1 / num2 if num2 != 0 else "Erro: Divisão por zero")
+    except ValueError:
+        result.set("Erro: Entrada inválida")
 
-# Criando a janela principal
+# Janela principal
 window = tk.Tk()
 window.title("Calculadora")
+window.configure(bg="#f5f5f5")
+window.geometry("300x400")
 
-# Entradas para números
-entry_num1 = tk.Entry(window, width=15, font=("Arial", 14))
-entry_num1.grid(row=0, column=0, padx=10, pady=10)
+# Configurações visuais
+title = tk.Label(window, text="Calculadora Tkinter", font=("Arial", 18, "bold"), bg="#f5f5f5", fg="#333")
+title.pack(pady=10)
 
-entry_num2 = tk.Entry(window, width=15, font=("Arial", 14))
-entry_num2.grid(row=0, column=1, padx=10, pady=10)
+entry_frame = tk.Frame(window, bg="#f5f5f5")
+entry_frame.pack(pady=10)
+entry_num1 = tk.Entry(entry_frame, font=("Arial", 14), width=7)
+entry_num1.grid(row=0, column=0, padx=5)
+entry_num2 = tk.Entry(entry_frame, font=("Arial", 14), width=7)
+entry_num2.grid(row=0, column=1, padx=5)
 
-# Variável para exibir o resultado
+# Resultado
 result = tk.StringVar()
+result_label = tk.Label(window, textvariable=result, font=("Arial", 14), bg="#f5f5f5", fg="#007700")
+result_label.pack(pady=10)
 
-# Label para mostrar o resultado
-label_result = tk.Label(window, textvariable=result, font=("Arial", 14))
-label_result.grid(row=1, column=0, columnspan=2, pady=10)
+# Botões
+button_frame = tk.Frame(window, bg="#f5f5f5")
+button_frame.pack(pady=10)
+operations = [("+", "#4CAF50"), ("-", "#FF5722"), ("*", "#2196F3"), ("/", "#9C27B0")]
 
-# Botões de operação
-button_add = tk.Button(window, text="+", font=("Arial", 14), command=add)
-button_add.grid(row=2, column=0, padx=10, pady=10)
+for op, color in operations:
+    btn = tk.Button(
+        button_frame, text=op, font=("Arial", 14), bg=color, fg="white", command=lambda op=op: calculate(op)
+    )
+    btn.pack(side="left", padx=5)
 
-button_subtract = tk.Button(window, text="-", font=("Arial", 14), command=subtract)
-button_subtract.grid(row=2, column=1, padx=10, pady=10)
-
-button_multiply = tk.Button(window, text="*", font=("Arial", 14), command=multiply)
-button_multiply.grid(row=3, column=0, padx=10, pady=10)
-
-button_divide = tk.Button(window, text="/", font=("Arial", 14), command=divide)
-button_divide.grid(row=3, column=1, padx=10, pady=10)
-
-# Iniciando a interface gráfica
 window.mainloop()
+
