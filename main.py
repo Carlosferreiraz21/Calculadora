@@ -1,4 +1,3 @@
-#Branch att Visual
 import tkinter as tk
 
 # Função de cálculo básica
@@ -23,6 +22,7 @@ window.geometry("300x300")
 title = tk.Label(window, text="Calculadora Visual", font=("Arial", 18, "bold"), bg="#f5f5f5", fg="#333")
 title.pack(pady=10)
 
+# Frame para entradas
 entry_frame = tk.Frame(window, bg="#f5f5f5")
 entry_frame.pack(pady=10)
 entry_num1 = tk.Entry(entry_frame, font=("Arial", 14), width=10)
@@ -43,3 +43,5 @@ btn_sub = tk.Button(window, text="-", font=("Arial", 14), bg="#FF5722", fg="whit
 btn_sub.pack(side="left", padx=5)
 
 window.mainloop()
+
+
