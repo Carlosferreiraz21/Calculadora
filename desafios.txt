@@ -1,12 +1,12 @@
-Olá Professor(a), estarei documentando aqui todo o processo do projeto, desde o início,
+Olá Professor(a), estarei documentando aqui todo o processo do projeto, desde o início
 até a criação e implementação do projeto na prática.
 
-Inicialmente para pensar no que fazer, em qual projeto trabalhar, fiz uma pesquisa básica e 
+Inicialmente para pensar no que fazer, e em qual projeto trabalhar, fiz uma pesquisa básica e 
 após isso decidi fazer o projeto de uma calculadora, que em partes é um projeto simples e 
 acredito que seja de fácil entendimento para todo mundo. Não tive muitos problemas em relação a 
 criação do projeto base/funcional do programa, pois não se trata de nada extremamente complexo.
 
-Fiz todo o processo de versionamento ultilizando as ferramentas Git, e GitHub, e não tive 
+Fiz todo o processo de versionamento ultilizando as ferramentas Git e GitHub, e não tive 
 problemas muito complexos nessa fase, pois já tinha certo conhecimento com ambas ferramentas, 
 Porém com o tempo que estava sem ultilizar tal ferramenta, tive pequenos problemas técnicos
 que rapidamente foram resolvidos com pesquisas e chat bots de IA, que nos fornece uma experiência e 
@@ -21,6 +21,14 @@ conflito entre as branches e o main original, ai tive que fazer todas as mudanç
 as duas branches ficassem compatíveis com o main Principal. Após todo esse processo o merge das 
 branches funcionou e o arquivo ficou atualizado, porém com alguns bugs que tive que resolver depois.
 
+Agora falando da parte técnica e funcional de versionar e de usar as ferramentas corretas para isso, 
+acredito que seja unanimidade entre os desenvolvedores e estudantes da área de TI, que esse processo é crucial 
+para o desenvolvimento e processos de qualquer software. Todo projeto de Técnologia envolvendo ou não
+softwares, precisa de uma organização correta e detalhada para cada contexto que lhe é aplicado. Como 
+estudante é fundamental entender a importância disso na contrução de um projeto, e até mesmo para 
+crescimento acadêmico e profissional, pois com tudo documentado fica uma visualização mais simples e
+detalhada para que possamos aprender com nossos erros e acertos. 
+
 Esse foi meu processo envolvendo a criação, documentação e versionamento do meu projeto da Calculadora 
-em Python, tive algumas dificuldades sim, algumas mais complexas que outras, mas no final o programa 
-ficou, simples, bem estruturado e principalmente funcional.
+em Python, tive algumas dificuldades sim, umas mais complexas que outras, mas no final o programa 
+ficou simples, bem estruturado e principalmente funcional.
